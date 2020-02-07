@@ -1,0 +1,29 @@
+description: TIENE LEAD, SUCCESS LOGIN
+nick_name: chino
+first_name: Kei
+middle_name:
+last_name: Takayama
+second_last_name: Higuchi
+dni: '07826015'
+idc: '078260151'
+cic: '06863570'
+accessToken:
+refreshToken:
+enabled: true
+email: ktakayama@yopmail.com
+cellphone: 970000001
+uuid: uuid
+islogin: false
+password: '000000'
+cards:
+    -
+        number: '4557885790234408'
+        expiry_date: '04/19'
+        status: 'active'
+        accounts:
+        -
+            number: '19411294613099'
+            currency: 'soles'
+            balance: '45678.00'
+            type: 'CUENTAS DE AHORROS'
+            subtype: 'PRIMERA CUENTA'

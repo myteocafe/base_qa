@@ -1,0 +1,14 @@
+version: '2'
+services:
+  mockclient:
+    image: teocafe/mockclient:latest
+    build: ./client
+    volumes:
+      - "./mocks:/opt/mocks"
+    depends_on:
+      - mockserver
+  mockserver:
+    image: teocafe/mockserver:latest
+    build: ./server
+    ports:
+      - "9000:8080"

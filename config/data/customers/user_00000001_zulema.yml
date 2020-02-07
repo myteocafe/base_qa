@@ -1,0 +1,29 @@
+description: NO TIENE LEAD, SUCCESS LOGIN
+nick_name: Chinita
+first_name: Zulema
+middle_name:
+last_name: Santacruz
+second_last_name: Calle
+dni: '07826006'
+idc: '078260061'
+cic: '01890008'
+enabled: true
+email: promero@yopmail.com
+cellphone: 966965789
+uuid: uuid
+islogin: false
+password: '000000'
+cards:
+    -
+        number: '4557885790234408'
+        expiry_date: '04/19'
+        status: 'active'
+        accounts:
+        -
+            number: '19411294613099'
+            currency: 'soles'
+            balance: '45678.00'
+            type: 'CUENTAS DE AHORROS'
+            subtype: 'PRIMERA CUENTA'
+
+

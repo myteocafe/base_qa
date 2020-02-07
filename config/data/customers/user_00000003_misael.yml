@@ -1,0 +1,29 @@
+description: TIENE LEAD, Loan status Approve
+nick_name: Chato
+first_name: Misael
+middle_name:
+last_name: Castillo
+second_last_name: Chumpitaz
+dni: '10209964'
+idc: '102099641'
+cic: '03800083'
+accessToken:
+refreshToken:
+enabled: true
+email: misaelantonio@yopmail.com
+cellphone: 970000001
+uuid: uuid
+islogin: false
+password: '000000'
+cards:
+    -
+        number: '4557885790234408'
+        expiry_date: '04/19'
+        status: 'active'
+        accounts:
+        -
+            number: '19411294613099'
+            currency: 'soles'
+            balance: '45678.00'
+            type: 'CUENTAS DE AHORROS'
+            subtype: 'PRIMERA CUENTA'

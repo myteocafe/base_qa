@@ -1,0 +1,46 @@
+# ========================================
+# # # # # # # default profiles # # # # # #
+# ========================================
+default:   -p cucumber_reporting -p support_local_values_and_apis BROWSER=chrome
+api_local: -p cucumber_reporting -p support_local_values_and_apis -p api_tests
+e2e_local: -p cucumber_reporting -p support_local_values_and_apis -p e2e_tests
+chrome:   -p cucumber_reporting -p support_local_values_and_apis  -p e2e_tests BROWSER=chrome
+firefox:   -p cucumber_reporting -p support_local_values_and_apis -p e2e_tests
+
+
+# -------------------------------- #
+# === Tags to execute profiles === #
+# -------------------------------- #
+e2e_tests:    --tags @web_tests
+api_tests:    --tags @api
+all:          --tags @api @web_tests
+no_api:       --tags ~@api
+
+
+# -------------------------- #
+# === Reporting Profiles === #
+# -------------------------- #
+local_report: --format html  --out report/<%=Time.now.strftime("%d_%m_%Y__%H_%M_%S")%>-report.html --format pretty
+ci_report:    --format junit --out report/ --format pretty
+cucumber_reporting:   --format pretty --format json --out report/cucumber.json
+
+
+# ----------------------------------------------- #
+# === Settings in general (app & support api) === #
+# ----------------------------------------------- #
+support_local_values_and_apis:          FIG_NEWTON_FILE=env_local.yml
+support_cloud_values_docker:            FIG_NEWTON_FILE=env_docker.yml
+support_integration_values_and_apis:    FIG_NEWTON_FILE=env_integration.yml
+
+# ============================== # ============================== # =============================== # ===============================
+# ============================================
+# # # # # # # # # # WEB TESTS  # # # # # # # #
+# ============================================
+
+#default:      -p web_local
+web_local:    BROWSER=chrome   -p support_local_values_and_apis           -p web_tests    -p local_report
+web_integ:    BROWSER=chrome   -p support_integration_values_and_apis     -p web_tests    -p ci_report
+
+# Tags of web tests to execute
+web_tests:      --tags @web_tests
+

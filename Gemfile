@@ -1,0 +1,25 @@
+source 'https://rubygems.org'
+
+gem 'cucumber' , '2.4.0'
+gem 'rspec'
+gem 'rake'
+gem 'page-object'
+gem 'rest-client'
+gem 'selenium-webdriver'
+gem 'fig_newton'
+gem 'require_all'
+gem 'json'
+gem 'json-schema'
+gem 'allure-cucumber'
+gem 'data_magic'
+gem 'watir-scroll'
+#gem 'activesupport'
+gem 'tiny_tds', '~>2.0.0'
+gem 'activerecord-sqlserver-adapter'
+gem 'appium_lib'
+gem 'factory_bot'
+gem 'faker'
+gem 'redis'
+gem "webdrivers", "~> 3.0"
+
+

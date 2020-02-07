@@ -1,0 +1,15 @@
+{
+  "name": "mocks",
+  "version": "1.0.0",
+  "description": "TEOCAFE Demo Mocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cliff La Torre",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "~0.4",
+    "mockserver-client": "^1.0.10"
+  }
+}
